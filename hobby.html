@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SPORT</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color : grey;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the content */
+.content {
+	text-align: center ;
+  background-color: #ddd;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+#bola{
+	background:lightblue ; 
+	text-align : center ;
+	}
+.futsal{
+	background:lightblue ; 
+	text-align : center ;
+	}
+#ball{
+	text-decoration: overline;
+	text-align : center;
+	size : 100%; 
+	}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="./main.html">HOME</a>
+  <a href="./hobby.html">SPORT</a>
+  <a href="./education.html">EDUCATION</a>
+  <a href="./contact.html">CONTACT</a>
+  <a href="./feedback.html">FEEDBACK</a>
+</div>
+
+<div class="content">
+  <h1>Sport</h1>
+  <p>“Make sure your worst enemy doesn’t live between your own two ears.” </p>
+  <p align="center">-Laird Hamilton- </p>
+  </div>
+  
+ <div id="bola"> 
+	<h1> Soccer </h1>
+	<a href="./gmbar/aku.jpg">
+    <img alt="aku" src="./gmbar/aku.jpg" width="350" height="300"></a>
+	<a href="./gmbar/bola1.jpg">
+	<img alt="team" src="./gmbar/bola1.jpg" width="350" height="300"></a>
+	<br><br>
+	
+	<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  
+	<video id="video1" width="420">
+  <source src="./gmbar/bola2.mp4" type="video/mp4">
+  <source src="./gmbar/bola2.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<p id="ball"> We won the football tournament of 9V9 close for uitm kuala terengganu in 2019!!! </p>
+</div>
+</div>
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script>
+<div class="futsal">
+
+<h1> FUTSAL </h1>
+	<div><a href="./gmbar/futsal1.jpg">
+    <img alt="aku" src="./gmbar/futsal1.jpg" width="350" height="300">
+	<p>3rd place open futsal ASC</p></a></div>
+	<div><a href="./gmbar/futsal2.jpg">
+	<img alt="team" src="./gmbar/futsal2.jpg" width="350" height="300">
+	<p>Friendly match with team UiTM Dungun</a></div>
+	<div><a href="./gmbar/futsal3.jpg">
+	<img alt="team" src="./gmbar/futsal3.jpg" width="350" height="300">
+	<p>Futsal tournament for Uitm KT student</a></div>
+	<br><br>
+	
+</body>
+</html>
